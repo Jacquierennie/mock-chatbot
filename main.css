@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Averta-Semibold;
+  src: url('./assets/fonts/TW-Averta-Semibold.ttf');
+}
+
+@font-face {
+  font-family: Averta-Regular;
+  src: url('./assets/fonts/TW-Averta-Regular.ttf');
+}
+
+html,
+body {
+  background: #ffffff;
+  margin: 0;
+  font-family: Averta-Regular, Helvetica, sans-serif;
+  width: 100vw;
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 23px;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo-group img {
+  width: 120px;
+}
+
+.email-icon {
+  padding-top: 8px;
+}
+
+.email-icon img {
+  height: 18px;
+}
+
+.main,
+.sub {
+  position: relative;
+  padding: 35px 23px;
+}
+
+h1 {
+  font-family: Averta-Semibold;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 110px;
+}
+
+h2 {
+  font-family: Averta-Semibold;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* max-width: 90%; */
+  font-size: 27px;
+  padding-left: 6.6px;
+}
+
+h3 {
+  max-width: 80%;
+  padding-left: 1%;
+  font-size: 28px;
+}
+
+p {
+  max-width: 80%;
+  padding-left: 1%;
+  font-size: 14px;
+}
+
+.hero {
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  /* .main {
+    min-height: 1000px;
+  } */
+
+  .hero {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    margin-left: -23px;
+  }
+}
+
+@media (min-width: 768px) {
+  html,
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .main {
+    height: 55%;
+    padding-top: 130px;
+    padding-left: 50px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .hero {
+    top: 50px;
+    left: 50%;
+    margin-top: -50px;
+  }
+
+  .hero {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 11vw;
+  }
+
+  h2 {
+    font-size: 2vw;
+  }
+
+  .input-wrapper {
+    position: relative;
+    top: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding-top: 130px;
+    height: 75%;
+  }
+
+  .hero {
+    left: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main {
+    padding-top: 120px;
+    height: 77%;
+  }
+
+  .hero {
+    left: 60%;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1745px) {
+  .main {
+    padding-top: 120px;
+    height: 65%;
+  }
+
+  .hero {
+    width: 42%;
+  }
+
+  .input-wrapper {
+    position: relative;
+    top: 50px;
+  }
+}

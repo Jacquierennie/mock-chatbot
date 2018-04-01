@@ -1,0 +1,99 @@
+/* <<<<<<<<<<<<<<<<< input box begins here */
+
+.wrapper {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 2px 1px 0px #ddd;
+  box-sizing: border-box;
+  height: 300px;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  position: absolute;
+  top: 50%;
+  width: 300px;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.email-input,
+.submit-email {
+  text-align: center;
+  background: #fe3780;
+  border-radius: 42px;
+  border: 1px solid #fe3780;
+  z-index: 999;
+  color: white;
+}
+
+.email-input {
+  font-size: 15px;
+  height: 40px;
+  width: 220px;
+  /* padding-left: 23px; */
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.submit-email {
+  font-size: 14px;
+  height: 40px;
+  width: 80px;
+  padding-left: 5px;
+  /* position: absolute;
+  bottom: 10px;
+  right: 5px; */
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 12.5px;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+  font-size: 12.5px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.95);
+  opacity: 1; /* Firefox */
+  font-size: 12.5px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 12.5px;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 12.5px;
+}
+
+.email-input:focus + .underline {
+  transform: scale(1);
+}
+
+/* .underline {
+  background-color: white;
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  left: 23px;
+  bottom: 8px;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  width: 180px;
+  z-index: 999;
+} */
+
+/* <<<<<<<<<<<<<<<<< ends here */
