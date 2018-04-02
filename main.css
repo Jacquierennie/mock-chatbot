@@ -45,6 +45,10 @@ h2 {
   padding-top: 8px;
 }
 
+.email-icon:hover {
+ cursor: pointer;
+}
+
 .email-icon img {
   height: 18px;
 }
@@ -75,7 +79,6 @@ h2 {
 
 h3 {
   font-family: Averta-Semibold;
-
   max-width: 80%;
   padding-left: 1%;
   font-size: 28px;
@@ -99,11 +102,7 @@ p {
   position: absolute;
 }
 
-@media (max-width: 600px) {
-  /* .main {
-    min-height: 1000px;
-  } */
-
+@media (max-width: 767px) {
   .hero-img {
     width: 100%;
     right: 0;
@@ -115,12 +114,12 @@ p {
   html,
   body {
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .main {
-    height: 55%;
-    padding-top: 130px;
+    height: auto;
+    padding-top: 5%;
     padding-left: 50px;
   }
 
@@ -128,57 +127,115 @@ p {
     display: none;
   }
 
-  .hero-img {
-    top: 50px;
-    left: 50%;
-    margin-top: -50px;
+  .hero {
+    height: 0px;
   }
 
   .hero-img {
+    bottom: 0;
+    right: 0;
+    margin-top: -50px;
     width: 50%;
   }
 
+  .sub {
+    padding-top: 0;
+  }
+
+  .input-wrapper {
+    padding-left: 48px;
+    width: 38vw;
+    display: block;
+  }
+
+  #email-input {
+    width: 35vw;
+  }
+
+  #email-input:focus {
+    border:3px solid #fe3780;
+    height:35px;
+
+  }
+
   h1 {
-    font-size: 11vw;
+    font-size: 13vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    padding-left: 27px;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 39.38px;
+  }
+
+  p {
+    max-width: 43%;
+    padding-left: 27px;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+  .footer {
+    padding-left: 53px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+
+  .main {
+    padding-top: 50px;
+  }
+
+  h1 {
+    font-size: 10vw;
   }
 
   h2 {
     font-size: 2vw;
   }
 
-  .input-wrapper {
-    position: relative;
-    top: 40px;
+  h3 {
+    padding-left: 33px;
   }
-}
 
-@media (min-width: 1024px) {
-  .main {
-    padding-top: 130px;
-    height: 75%;
+  p {
+    padding-left: 33px;
   }
 
   .hero-img {
-    left: 50%;
+    bottom: 0;
+    right: 0;
+    margin-top: -50px;
+    width: 40%;
   }
 }
 
+/* ---------------------- ignore below for now */
+
 @media (min-width: 1440px) {
-  .main {
-    padding-top: 120px;
-    height: 77%;
+
+
+  /* .main {
+    padding-top: 50px;
   }
 
   .hero-img {
     left: 60%;
     width: 40%;
-  }
+  } */
 }
 
 @media (min-width: 1745px) {
-  .main {
+  /* .main {
     padding-top: 120px;
-    height: 65%;
   }
 
   .hero-img {
@@ -188,5 +245,5 @@ p {
   .input-wrapper {
     position: relative;
     top: 50px;
-  }
+  } */
 }
