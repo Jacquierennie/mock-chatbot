@@ -1,11 +1,11 @@
 @font-face {
   font-family: Averta-Semibold;
-  src: url('./assets/fonts/TW-Averta-Semibold.ttf');
+  src: url("./assets/fonts/TW-Averta-Semibold.ttf");
 }
 
 @font-face {
   font-family: Averta-Regular;
-  src: url('./assets/fonts/TW-Averta-Regular.ttf');
+  src: url("./assets/fonts/TW-Averta-Regular.ttf");
 }
 
 html,
@@ -14,8 +14,15 @@ body {
   margin: 0;
   font-family: Averta-Regular, Helvetica, sans-serif;
   width: 100vw;
-  height: 200vh;
   overflow-x: hidden;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  text-align: center;
+  font-size: 12px;
 }
 
 h1,
@@ -67,18 +74,28 @@ h2 {
 }
 
 h3 {
+  font-family: Averta-Semibold;
+
   max-width: 80%;
   padding-left: 1%;
   font-size: 28px;
+  letter-spacing: 0;
+  line-height: 39.38px;
 }
 
 p {
   max-width: 80%;
   padding-left: 1%;
   font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
 .hero {
+  height: 100vw;
+}
+
+.hero-img {
   position: absolute;
 }
 
@@ -87,9 +104,8 @@ p {
     min-height: 1000px;
   } */
 
-  .hero {
+  .hero-img {
     width: 100%;
-    bottom: 0;
     right: 0;
     margin-left: -23px;
   }
@@ -112,13 +128,13 @@ p {
     display: none;
   }
 
-  .hero {
+  .hero-img {
     top: 50px;
     left: 50%;
     margin-top: -50px;
   }
 
-  .hero {
+  .hero-img {
     width: 50%;
   }
 
@@ -142,7 +158,7 @@ p {
     height: 75%;
   }
 
-  .hero {
+  .hero-img {
     left: 50%;
   }
 }
@@ -153,7 +169,7 @@ p {
     height: 77%;
   }
 
-  .hero {
+  .hero-img {
     left: 60%;
     width: 40%;
   }
@@ -165,7 +181,7 @@ p {
     height: 65%;
   }
 
-  .hero {
+  .hero-img {
     width: 42%;
   }
 

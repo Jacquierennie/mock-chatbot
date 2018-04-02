@@ -1,37 +1,25 @@
 /* <<<<<<<<<<<<<<<<< input box begins here */
 
-.wrapper {
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0px 2px 1px 0px #ddd;
-  box-sizing: border-box;
-  height: 300px;
-  left: 50%;
-  margin: -150px 0 0 -150px;
-  position: absolute;
-  top: 50%;
-  width: 300px;
+.input-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-.input-wrapper {
+.input-combo {
+  position: relative;
   display: flex;
 }
 
-.email-input,
-.submit-email {
-  text-align: center;
-  background: #fe3780;
+.email-input {
+  width: 80vw;
+  background: white;
   border-radius: 42px;
   border: 1px solid #fe3780;
   z-index: 999;
-  color: white;
-}
-
-.email-input {
+  color: black;
   font-size: 15px;
   height: 40px;
-  width: 220px;
-  /* padding-left: 23px; */
+  padding-left: 20px;
 }
 
 .email-input:focus {
@@ -39,47 +27,52 @@
 }
 
 .submit-email {
-  font-size: 14px;
-  height: 40px;
-  width: 80px;
-  padding-left: 5px;
-  /* position: absolute;
-  bottom: 10px;
-  right: 5px; */
+  background: #fe3780;
+  border-radius: 0 42px 42px 0;
+  border: 1px solid #fe3780;
+  z-index: 999;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 13px;
+  height: 43px;
+  width: 25%;
+  line-height: 42px;
 }
 
 input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.95);
+  color: black;
   font-size: 12.5px;
 }
 
 input:focus::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0);
+  color: black;
   font-size: 12.5px;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(255, 255, 255, 0.95);
+  color: black;
   opacity: 1; /* Firefox */
   font-size: 12.5px;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgba(255, 255, 255, 0.95);
+  color: black;
   font-size: 12.5px;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: rgba(255, 255, 255, 0.95);
+  color: black;
   font-size: 12.5px;
 }
 
-.email-input:focus + .underline {
+/* .email-input:focus + .underline {
   transform: scale(1);
-}
+} */
 
 /* .underline {
   background-color: white;
