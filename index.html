@@ -4,59 +4,52 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Zeep - coming soon!</title>
+  <title>Meet Bobby!</title>
   <link rel="fav" href="./assets/img/favicon-32x32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="input-box.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="nav">
+  <section class="nav">
     <div class="logo-group">
-      <img src="./assets/img/logo-group.svg" alt="">
+      <img style="height:40px;position:absolute;top:10px; left:-10px" src="./assets/img/bigpanda.svg" alt="">
+      <h2 style="font-size:32px;position:absolute;top:15px; left:80px">Bobby</h2>
     </div>
-    <div onclick="document.getElementById('email-input').focus(); return false;" class="email-icon">
-      <img src="./assets/img/email-icon.svg" alt="">
+
+    <a class="email-icon" href="mailto:kn53535@gmail.com?Subject=Hello%20again" target="_top">
+      <img style="color:black" src="./assets/img/email-icon.svg" alt="">
+    </a>
+  </section>
+  <section class="main">
+    <h1>Greetings!</h1>
+    <h2>Meet your first chatbot creation</h2>
+  </section>
+  <section class="chatbot-container">
+    <div>
+      <h4 id="begin">Start</h4>
     </div>
+    <div id="result">
+    </div>
+    <div class="input">
+      <input type="text" id="answer" placeholder="Enter your response" required/>
+    </div>
+  </section>
+  <section class="sub">
+    <h3>Cooked up with Javascript and a hint of cinnamon</h3>
+    <p>Join the Accelerate Intro Workshop to start your coding journey and find out how to build stuff like me!</p>
+  </section>
+  <div class="big-panda">
+    <img src="./assets/img/bigpanda.svg" alt="">
   </div>
-  <div class="main">
-    <h1>Hello</h1>
-    <h2>Let's chat property</h2>
-  </div>
-  <div class="hero">
-    <img class="hero-img" src="./assets/img/hero-res.png" alt="">
-  </div>
-  <div class="sub">
-    <h3>Reshaping the way people approach real estate.</h3>
-    <p>Are you interested in knowing more about Zeep? Sign up to our newsletter by entering your email below:</p>
+  <div class="mobile-only-div">
+
   </div>
 
-  <div id="mc_embed_signup" class="input-wrapper">
-    <form class="input-combo" action="https://chat.us12.list-manage.com/subscribe/post?u=80d0a3b840f44d22a68d6dcfe&amp;id=e270bbfbd5"
-      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-        <div class="mc-field-group">
-          <input id="email-input" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address"
-            type="text" />
-        </div>
-        <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_80d0a3b840f44d22a68d6dcfe_e270bbfbd5" tabindex="-1" value="">
-        </div>
-        <button class="submit-email" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-      </div>
-    </form>
-  </div>
-
-  <div class="footer">
-    Copyright © 2018 Zeep. All rights reserved.
-  </div>
 </body>
-<script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/80d0a3b840f44d22a68d6dcfe/356007d02daf4d8b233b16b72.js");</script>
+<script src="./main.js"></script>
 
 </html>

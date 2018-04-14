@@ -17,17 +17,16 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  position:relative;
+}
+
 .footer {
   padding-top: 50px;
   padding-bottom: 20px;
   padding-left: 25px;
   text-align: center;
   font-size: 12px;
-}
-
-h1,
-h2 {
-  margin: 0;
 }
 
 .nav {
@@ -59,17 +58,22 @@ h2 {
   padding: 35px 23px;
 }
 
+h1,
+h2 {
+  margin: 0;
+}
+
 h1 {
   font-family: Averta-Semibold;
-  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 110px;
+  font-size: 60px;
 }
 
 h2 {
   font-family: Averta-Semibold;
-  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* max-width: 90%; */
@@ -79,11 +83,18 @@ h2 {
 
 h3 {
   font-family: Averta-Semibold;
-  max-width: 80%;
   padding-left: 1%;
   font-size: 28px;
   letter-spacing: 0;
   line-height: 39.38px;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 600;
+  border: 3px solid #fff;
+  padding: 10px 20px;
+  margin-bottom: 40px;
 }
 
 p {
@@ -94,19 +105,71 @@ p {
   line-height: 24px;
 }
 
-.hero {
-  height: 100vw;
+#result {
+  font-size: 32px;
+  color: #fff;
 }
 
-.hero-img {
-  position: absolute;
+#answer {
+  color: #fff;
+  padding: 20px;
+  font-size: 26px;
+  background: transparent;
+  border: 0;
+}
+
+#answer::placeholder {
+  color: #909090;
+}
+
+#answer:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+#begin {
+  cursor:pointer
 }
 
 @media (max-width: 767px) {
-  .hero-img {
-    width: 100%;
-    right: 0;
-    margin-left: -23px;
+
+
+  .mobile-only-div {
+    height:100vh;
+  }
+
+  .big-panda {
+    display:flex;
+    justify-content:center
+  }
+
+  .chatbot-container {
+    border: 1px solid black;
+    border-radius:30px 30px 0 0;
+    width:90vw;
+    position:absolute;
+    left:5vw;
+    bottom:0px;
+    height:80vh;
+    background: #50514f;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .input {
+    margin-left:15%;
+  }
+
+  #answer {
+    padding: 5%;
   }
 }
 
@@ -117,29 +180,54 @@ p {
     /* overflow: hidden; */
   }
 
+  h3 {
+    max-width: 50%;
+  }
+
+  .chatbot-container {
+    border: 1px solid black;
+    border-radius:30px 30px 0 0;
+    width:40vw;
+    position:absolute;
+    bottom:0px;
+    height:80vh;
+    right:0px;
+    background: #50514f;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .big-panda img {
+    height:140px;
+    position:absolute;
+    bottom:20px;
+    left:42%
+  }
+
+  .mobile-only-div {
+    display:none;
+  }
+
   .main {
     height: auto;
     padding-top: 5%;
-    padding-left: 50px;
+    padding-left: 100px;
   }
 
   hr {
     display: none;
   }
 
-  .hero {
-    height: 0px;
-  }
-
-  .hero-img {
-    bottom: 0;
-    right: 0;
-    margin-top: -50px;
-    width: 50%;
-  }
-
   .sub {
     padding-top: 0;
+    padding-left:75px
   }
 
   .input-wrapper {
@@ -168,7 +256,7 @@ p {
 
   h3 {
     padding-left: 27px;
-    font-size: 18px;
+    font-size: 15.5px;
     letter-spacing: 0;
     line-height: 39.38px;
   }
@@ -176,7 +264,7 @@ p {
   p {
     max-width: 43%;
     padding-left: 27px;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0;
     line-height: 24px;
   }
@@ -191,15 +279,15 @@ p {
 @media (min-width: 1024px) {
 
   .main {
-    padding-top: 50px;
+    padding-top: 70px;
   }
 
   h1 {
-    font-size: 10vw;
+    font-size: 9.5vw;
   }
 
   h2 {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   h3 {
@@ -210,40 +298,32 @@ p {
     padding-left: 33px;
   }
 
-  .hero-img {
-    bottom: 0;
-    right: 0;
-    margin-top: -50px;
-    width: 40%;
-  }
+
 }
+
+
 
 /* ---------------------- ignore below for now */
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
 
 
-  /* .main {
+  .main {
     padding-top: 50px;
   }
 
-  .hero-img {
-    left: 60%;
-    width: 40%;
-  } */
+
 }
 
 @media (min-width: 1745px) {
-  /* .main {
+  .main {
     padding-top: 120px;
   }
 
-  .hero-img {
-    width: 42%;
-  }
+
 
   .input-wrapper {
     position: relative;
     top: 50px;
-  } */
-}
+  }
+} */
